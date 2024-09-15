@@ -1,5 +1,5 @@
 import express from 'express'
-import UserController from '../controller/user'
+// import UserController from '../controller/user'
 import { Client } from 'pg'
 // const { Client } = require('pg');
 
@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/login', (req, res) => {
-  // UserController. 
+  // UserController
 })
 app.post('/register', (req, res) => { })
 app.post('/logout', (req, res) => { })
