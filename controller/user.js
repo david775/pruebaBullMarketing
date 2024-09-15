@@ -1,8 +1,7 @@
-export class name {
-
+export class UserController {
   // constructor(parameters) {
   // }
-  // create = async (req, res) => {
-  //   req.
-  // }
+  login = async (req, res) => {
+
+  }
 }
