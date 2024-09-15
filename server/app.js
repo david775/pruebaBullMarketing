@@ -1,13 +1,12 @@
 import express from 'express'
 import UserController from '../controller/user'
-// import CheckinController from '../controller/checkinRecord
-// import { Client } from 'pg'
+import { userModel } from '../model/user'
 
 const port = process.env.PORT ?? 3000
 
 const app = express()
 
-app.post('/login', UserController.login)
+app.post('/login', UserController(userModel))
 // app.post('/register', (req, res) => { })
 // app.post('/logout', (req, res) => { })
 
